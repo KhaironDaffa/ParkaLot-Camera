@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1091570834135",
+    "project_id": "parking-lot-315218",
+    "storage_bucket": "parking-lot-315218.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1091570834135:android:ec39dda10d88a125976e92",
+        "android_client_info": {
+          "package_name": "com.dicoding.parkalotcamera"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1091570834135-giruja8a9fs0vrc92u2dspkvicp5t4qa.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB_CLBPltuyE4XkQ4oXNbomBDxUKMBzGxw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1091570834135-giruja8a9fs0vrc92u2dspkvicp5t4qa.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
