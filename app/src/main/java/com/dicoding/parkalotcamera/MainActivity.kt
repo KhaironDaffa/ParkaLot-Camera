@@ -75,24 +75,14 @@ class MainActivity : AppCompatActivity() {
             return
         }
 
-        /*
-        var imgRef = FirebaseStorage.getInstance().reference.child("images/$nameFile$timeStamp")
-        imgRef
-            .putFile(selectedImageUri!!)
-            .addOnSuccessListener {
-                binding.mainRoot.snackbar("Image Uploaded")
-            }
-            .addOnFailureListener {
-                binding.mainRoot.snackbar("Image Uploaded")
-            }*/
-
         val parcelFileDescriptor =
             contentResolver.openFileDescriptor(selectedImageUri!!, "r", null) ?: return
 
         val inputStream = FileInputStream(parcelFileDescriptor.fileDescriptor)
         val file = File(cacheDir, contentResolver.getFileName(selectedImageUri!!))
         val outputStream = FileOutputStream(file)
-        val nameFile = "ParkaLot CarPark Image"
+        val timeStamp = SimpleDateFormat("EEE, d MMM yyyy - HH:mm:ss", Locale.getDefault()).format(Date())
+        val nameFile = "ParkaLot - $timeStamp"
         inputStream.copyTo(outputStream)
 
         val body = UploadRequestBody(file, "image")
